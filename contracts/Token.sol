@@ -56,5 +56,25 @@ contract SentienceToken is ERC20, AccessControl, Ownable {
     TransferHelpers._safeTransferERC20(token, to, amount);
   }
 
+  function excludeFromPayingTax(address account) external onlyOwner {
+    require(!hasRole(excludedFromTaxRole, account), "already_excluded_from_paying_tax");
+    _grantRole(excludedFromTaxRole, account);
+  }
+
+  function includeInPayingTax(address account) external onlyOwner {
+    require(hasRole(excludedFromTaxRole, account), "not_paying_tax");
+    _revokeRole(excludedFromTaxRole, account);
+  }
+
+  function addRetriever(address account) external onlyOwner {
+    require(!hasRole(retrieverRole, account), "already_retriever");
+    _grantRole(retrieverRole, account);
+  }
+
+  function removeRetriever(address account) external onlyOwner {
+    require(hasRole(retrieverRole, account), "not_retriever");
+    _revokeRole(retrieverRole, account);
+  }
+
   receive() external payable {}
 }

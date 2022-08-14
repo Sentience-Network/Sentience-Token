@@ -1,0 +1,27 @@
+{
+  "name": "sentience-token",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write **/**/*.{js,json,sol}"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sentience-network/sentience-token.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sentience-network/sentience-token/issues"
+  },
+  "homepage": "https://github.com/sentience-network/sentience-token#readme",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.1.0",
+    "@openzeppelin/contracts": "^4.7.3",
+    "dotenv": "^16.0.1",
+    "hardhat": "^2.10.1"
+  }
+}

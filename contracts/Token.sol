@@ -6,7 +6,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 import "./helpers/TransferHelpers.sol";
 
-contract SentienceToken is ERC20, AccessControl, Ownable {
+contract ModulusToken is ERC20, AccessControl, Ownable {
   using SafeMath for uint256;
 
   bytes32 public excludedFromTaxRole = keccak256(abi.encodePacked("EXCLUDED_FROM_TAX"));

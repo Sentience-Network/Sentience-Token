@@ -1,5 +1,5 @@
 {
-  "name": "sentience-token",
+  "name": "modulus-token",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sentience-network/sentience-token.git"
+    "url": "git+https://github.com/modulus-network/modulus-token.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sentience-network/sentience-token/issues"
+    "url": "https://github.com/modulus-network/modulus-token/issues"
   },
-  "homepage": "https://github.com/sentience-network/sentience-token#readme",
+  "homepage": "https://github.com/modulus-network/modulus-token#readme",
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.1.0",
     "@openzeppelin/contracts": "^4.7.3",

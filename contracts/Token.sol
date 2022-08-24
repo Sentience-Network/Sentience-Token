@@ -21,7 +21,6 @@ contract ModulusToken is ERC20, AccessControl, Ownable {
     address tCollector,
     uint256 tPercentage
   ) ERC20(name_, symbol_) {
-    require(tPercentage <= 10, "tax_must_be_ten_percent_or_less");
     _grantRole(excludedFromTaxRole, _msgSender());
     _grantRole(retrieverRole, _msgSender());
     _mint(_msgSender(), amount);
